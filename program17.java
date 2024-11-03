@@ -1,3 +1,4 @@
+
 import java.util.*;
 class OverloadPrint
 {
@@ -27,7 +28,14 @@ class OverloadPrint
             sum += dg;
         }
         return (n == Math.pow(sum, 3));     
-    }   
+    }                                                                                           
+    void print(int num, String op)
+    {
+        if(op.toLowerCase().equals("s"))
+            System.out.println(num*num);
+        if(op.toLowerCase().equals("c"))
+            System.out.println(num*num*num);
+    }
     public static void main(String[] args) {
         Scanner SN = new Scanner(System.in);
         System.out.println("Enter your choice -\n(1) Print Pattern \n(2) Dudency check");
@@ -52,4 +60,4 @@ class OverloadPrint
         }
         SN.close();
 }
-}
+}                                                          

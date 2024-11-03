@@ -1,3 +1,4 @@
+
 import java.util.*;
 class StudentNames
 {
@@ -11,18 +12,18 @@ class StudentNames
         {
             names[i] = SN.next();
         }
-        System.out.println("Enter the name to search for > ");
-        searchForName(SN.next());
+        System.out.println("Enter the name to search for");
+        this.searchForName(SN.next());
     }
     void searchForName(String key)
     {
         for(int i = 0; i< 10; i++)
         {
-            if (names[i].toLowerCase() == key.toLowerCase())
+            startsWithADI(names[i]);
+            if (names[i].toLowerCase().equals(key.toLowerCase()))
             {
-                System.out.println("Found at index " + i);
+                System.out.println("Found at index " + i);   
             }
-            startsWithADI(names[1]);
         }
     }
     void startsWithADI(String input1)
